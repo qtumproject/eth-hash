@@ -22,7 +22,7 @@ def test_import_auto():
 def test_import_auto_empty_crash(monkeypatch):
     clean_module("eth_hash.auto")
     from eth_hash.auto import keccak
-    with mock.patch.dict("sys.modules", {"sha3": None, "Crypto.Hash": None}):
+    with mock.patch.dict("sys.modules", {"sha3": None, "Cryptodome.Hash": None}):
         with pytest.raises(ImportError, match="None of these hashing backends are installed"):
             keccak(b'eh')
 
@@ -43,7 +43,7 @@ def test_load_by_env(monkeypatch, backend):
     clean_module("eth_hash.auto")
     from eth_hash.auto import keccak
     monkeypatch.setenv('ETH_HASH_BACKEND', backend)
-    with mock.patch.dict("sys.modules", {"sha3": None, "Crypto.Hash": None}):
+    with mock.patch.dict("sys.modules", {"sha3": None, "Cryptodome.Hash": None}):
         with pytest.raises(ImportError) as excinfo:
             keccak(b'triggered')
     expected_msg = (

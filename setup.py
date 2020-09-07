@@ -42,14 +42,15 @@ extras_require['dev'] = (
 )
 
 setup(
-    name='eth-hash',
+    name='eth-hash-qtum',
     # *IMPORTANT*: Don't manually change the version here. Use `make bump`, as described in readme
     version='0.2.0',
-    description="""eth-hash: The Ethereum hashing function, keccak256, sometimes (erroneously) called sha3""",
+    description="""eth-hash-qtum: The Ethereum hashing function, keccak256, sometimes (erroneously) called sha3""",
     long_description_markdown_filename='README.md',
-    author='Jason Carver',
-    author_email='ethcalibur+pip@gmail.com',
-    url='https://github.com/ethereum/eth-hash',
+    long_description_content_type="text/markdown",
+    author='CodeFace',
+    author_email='codeface@qtum.info',
+    url='https://github.com/qtumproject/eth-hash',
     include_package_data=True,
     install_requires=[
     ],
@@ -59,7 +60,7 @@ setup(
     py_modules=['eth_hash'],
     license="MIT",
     zip_safe=False,
-    keywords='ethereum',
+    keywords='ethereum, qtum',
     packages=find_packages(exclude=["tests", "tests.*"]),
     classifiers=[
         'Development Status :: 3 - Alpha',
