@@ -22,7 +22,7 @@ Read more in the [documentation on ReadTheDocs](http://eth-hash.readthedocs.io/)
 ## Quickstart
 
 ```sh
-pip install eth-hash[pycryptodome]
+pip install eth-hash-qtum[pycryptodomex]
 ```
 
 ```py
@@ -51,7 +51,7 @@ You can set up your dev environment with:
 
 ```sh
 
-git clone git@github.com:ethereum/eth-hash.git
+git clone git@github.com/qtumproject/eth-hash.git
 cd eth-hash
 virtualenv -p python3 venv
 . venv/bin/activate

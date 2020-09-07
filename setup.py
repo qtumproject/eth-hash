@@ -26,8 +26,8 @@ extras_require={
         "ipython",
     ],
     # optional backends:
-    'pycryptodome': [
-        "pycryptodome>=3.6.6,<4",
+    'pycryptodomex': [
+        "pycryptodomex>=3.6.6,<4",
     ],
     'pysha3': [
         "pysha3>=1.0.0,<2.0.0",

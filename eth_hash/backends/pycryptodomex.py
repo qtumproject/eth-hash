@@ -1,4 +1,4 @@
-from Crypto.Hash import (
+from Cryptodome.Hash import (
     keccak,
 )
 
@@ -17,7 +17,7 @@ class preimage(BasePreImage):
 
     def __init__(self, prehash) -> None:
         self._hash = keccak.new(data=prehash, digest_bits=256, update_after_digest=True)
-        # pycryptodome doesn't expose a `copy` mechanism for it's hash objects
+        # pycryptodomex doesn't expose a `copy` mechanism for it's hash objects
         # so we keep a record of all of the parts for when/if we need to copy
         # them.
         self._parts = [prehash]

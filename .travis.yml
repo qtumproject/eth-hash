@@ -20,7 +20,7 @@ matrix:
 
     # backends
     - python: "3.5"
-      env: TOX_POSARGS="-e py35-backend-pycryptodome"
+      env: TOX_POSARGS="-e py35-backend-pycryptodomex"
     - python: "3.5"
       env: TOX_POSARGS="-e py35-backend-pysha3"
 
@@ -33,7 +33,7 @@ matrix:
 
     # backends
     - python: "3.6"
-      env: TOX_POSARGS="-e py36-backend-pycryptodome"
+      env: TOX_POSARGS="-e py36-backend-pycryptodomex"
     - python: "3.6"
       env: TOX_POSARGS="-e py36-backend-pysha3"
 
@@ -46,7 +46,7 @@ matrix:
 
     # backends
     - python: "pypy3.5"
-      env: TOX_POSARGS="-e pypy3-backend-pycryptodome"
+      env: TOX_POSARGS="-e pypy3-backend-pycryptodomex"
 
 cache:
   - pip: true

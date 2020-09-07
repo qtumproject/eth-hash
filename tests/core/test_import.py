@@ -35,7 +35,7 @@ def test_import():
 @pytest.mark.parametrize(
     'backend',
     [
-        'pycryptodome',
+        'pycryptodomex',
         'pysha3',
     ],
 )

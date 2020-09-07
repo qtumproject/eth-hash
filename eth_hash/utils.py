@@ -1,5 +1,6 @@
 import importlib
 import os
+import eth_hash.backends.pycryptodomex
 
 from eth_hash.backends import (
     SUPPORTED_BACKENDS,
